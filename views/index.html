@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Welcome to Express!></title>
+    </head>
+
+    <body>
+        <div class="top">
+            <h1>{{ title }}</h1>
+            <h1>released on
+                {{ releaseDate }}</h1>
+            <img src='{{ posterImg }}'/>
+        </div>
+        <div>
+            {{#actors}}
+                <h3>{{name}}</h3>
+                <h3>{{character}}</h3>
+                <img src='{{img}}'/>
+            {{/actors}}
+        </div>
+    </body>
+</html>
